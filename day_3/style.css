@@ -1,0 +1,35 @@
+/* Custom CSS for Mobile Recharge App (styles.css) */
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    /* Light background */
+}
+
+/* Custom utility for the main layout to ensure the footer is at the bottom */
+.min-h-screen-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header/Footer styling consistency */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background-color: #1f2937;
+    /* Dark gray */
+    color: #9ca3af;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    /* Pushes footer down */
+}
