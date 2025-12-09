@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Confirmation</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        nav a {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .confirmation-box {
+            text-align: center;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 2px solid green;
+            background-color: #e6ffe6;
+        }
+
+        .status {
+            color: green;
+            font-size: 2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Recharge Transaction Status</h1>
+    </header>
+    <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="index.html">Log Out</a>
+    </nav>
+    <main>
+        <div class="confirmation-box">
+            <h2 class="status">Recharge Successful!</h2>
+
+
+            <p>Your mobile number **98XXXXXX10** has been recharged with **₹299**.</p>
+
+            <h3>Transaction Details</h3>
+            <ul>
+                <li><strong>Operator:</strong> Airtel</li>
+                <li><strong>Amount:</strong> ₹299</li>
+                <li><strong>Transaction ID:</strong> TRNX123456789</li>
+                <li><strong>Date & Time:</strong> 09 Dec 2025, 15:20 IST</li>
+            </ul>
+
+            <a href="dashboard.html"><button>Go to Dashboard</button></a>
+            <a href="history.html"><button>View Recharge History</button></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Recharge App. Thank you for using our service.</p>
+    </footer>
+</body>
+
+</html>
