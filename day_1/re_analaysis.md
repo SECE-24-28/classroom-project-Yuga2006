@@ -97,3 +97,7 @@ The following screens represent the main user interfaces required:
 | **5. Confirmation Page** | Final transaction status. | Success or Failure message. Transaction ID, date, and final summary. Navigation link to Dashboard. |
 | **6. User Dashboard** | User's personal overview. | Profile summary, Quick Recharge option for last successful transaction, and the full Recharge History list (filterable). |
 | **7. Admin Dashboard** | Management and Reporting console. | Navigation links for Plan Management and Reports. Summary widgets for key metrics (Users, Revenue, Transactions). Central table for filterable Transaction Reports. |
+
+
+
+done 
