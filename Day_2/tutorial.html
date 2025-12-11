@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tutorial</title>
+</head>
+
+<body>
+
+    <hr>
+    <center><h1>Nika Pedia!</h1></center>
+    <hr>
+
+    <h2>Welcome to HTML Learning !</h2>
+    <h3>This guide provides the syntax for the most commonly used and important HTML5 tags, categorized by their function.</h3>
+
+    <hr>
+    <h3>Essential HTML Tags</h3>
+    <hr>
+
+    <h4>1) &lt;!DOCTYPE html&gt; - Declares the document to be HTML5.</h4>
+    <p>Example: <code>&lt;!DOCTYPE html&gt;</code></p>
+
+    <h4>2) &lt;html&gt; - Root element of an HTML page.</h4>
+    <p>Example: <code>&lt;html lang="en"&gt;...&lt;/html&gt;</code></p>
+
+    <h4>3) &lt;head&gt; - Contains meta-information about the document.</h4>
+    <p>Example: <code>&lt;head&gt;...&lt;title&gt;Page Title&lt;/title&gt;...&lt;/head&gt;</code></p>
+
+    <h4>4) &lt;title&gt; - Sets the title of the document.</h4>
+    <p>Example: <code>&lt;title&gt;My Awesome HTML Page&lt;/title&gt;</code></p>
+    <p>Output: My Awesome HTML Page</p>
+
+    <h4>5) &lt;body&gt; - Contains the visible content of the HTML</h4>
+    <p>Example: <code>&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;/body&gt;</code></p>
+    <p>Output: "Hello World"</p>
+
+    <hr>
+    <h3>Text Content & Headings</h3>
+    <hr>
+
+    <h4>1) &lt;h1&gt; to &lt;h6&gt; - Define HTML headings</h4>
+    <p>Example: <code>&lt;h2&gt;Section Title&lt;/h2&gt;</code></p>
+    <p>Output:</p>
+    <h2>Section Title</h2>
+
+    <h4>2) &lt;hr&gt; - Creates a thematic break</h4>
+    <p>Example: <code>&lt;p&gt;Content Above&lt;/p&gt; &lt;hr&gt; &lt;p&gt;Content Below&lt;/p&gt;</code></p>
+    <p>Output:</p>
+    <p>Content Above</p>
+    <hr>
+    <p>Content Below</p>
+
+    <h4>3) &lt;blockquote&gt; - Quotation block</h4>
+    <p>Example: <code>&lt;blockquote&gt;A single quote.&lt;/blockquote&gt;</code></p>
+    <blockquote>A single quote.</blockquote>
+
+    <h4>4) &lt;pre&gt; - Preserves formatting</h4>
+    <p>Example: <code>&lt;pre&gt;Line 1<br>Line 2&lt;/pre&gt;</code></p>
+    <pre>
+Line 1
+Line 2
+    </pre>
+
+    <h4>5) &lt;p&gt; - Paragraph tag</h4>
+    <p>Example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+    <p>This is a paragraph of text.</p>
+
+    <hr>
+    <h3>Hyperlinks & Media</h3>
+    <hr>
+
+    <h4>1) &lt;a&gt; - Hyperlink</h4>
+    <p>Example: <code>&lt;a href="#"&gt;Click Me&lt;/a&gt;</code></p>
+    <a href="amazon.in">Click Me</a>
+
+    <h4>2) &lt;img&gt; - Image tag</h4>
+    <p>Example: <code>&lt;img src="pic.jpg" alt="A sample picture"&gt;</code></p>                  
+    <p><b>Image:</b></p>
+    <img src="image.png" alt="A sample picture" width="100%">
+
+    <h4>3) &lt;video&gt; - Video player</h4>
+    <p>Example: <code>&lt;video controls src="movie.mp4"&gt;&lt;/video&gt;</code></p>
+    <p><b>Video:</b></p>
+    <video src="video.mp4" controls width="100%"></video>
+
+    <h4>4) &lt;audio&gt; - Audio player</h4>
+    <p>Example: <code>&lt;audio controls src="song.mp3"&gt;&lt;/audio&gt;</code></p>
+    <p><b>Audio:</b></p>
+    <audio src="audio.mp3" controls></audio>
+
+    <h4>5) &lt;iframe&gt; - Embed external content</h4>
+    <p>Example: <code>&lt;iframe src="map_url"&gt;&lt;/iframe&gt;</code></p>
+    <p><b>Output:</b></p>
+    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0;"></iframe>
+
+    <hr>
+    <h3>Lists</h3>
+    <hr>
+
+    <h4>1) &lt;ul&gt; - Unordered list</h4>
+    <p>Example: <code>&lt;ul&gt;&lt;li&gt;Coffee&lt;/li&gt;&lt;/ul&gt;</code></p>
+    <ul>
+        <li>Coffee</li>
+    </ul>
+
+    <h4>2) &lt;ol&gt; - Ordered list</h4>
+    <p>Example: <code>&lt;ol&gt;&lt;li&gt;First&lt;/li&gt;&lt;/ol&gt;</code></p>
+    <ol>
+        <li>First</li>
+    </ol>
+
+    <h4>3) &lt;dt&gt;, &lt;dd&gt;, &lt;dl&gt; - Description list</h4>
+    <p>Example: <code>&lt;dl&gt;&lt;dt&gt;HTML&lt;/dt&gt;&lt;dd&gt;Language&lt;/dd&gt;&lt;/dl&gt;</code></p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Language</dd>
+    </dl>
+
+    <hr>
+    <h3>Forms & User Input</h3>
+    <hr>
+
+    <h4>1) &lt;form&gt; - Defines an HTML form for user input.</h4>
+    <p>Example: <code>&lt;form action="/submit"&gt;...&lt;/form&gt;</code></p>
+    
+        
+    <h4>2) &lt;input&gt; - Defines an input field.</h4>
+    <p>Example: <code>&lt;input type="text" placeholder="Your Name"&gt;</code></p>
+    
+        
+    <h4>3) &lt;label&gt; - Defines a label for an &lt;input&gt; element.</h4>
+    <p>Example: <code>&lt;label for="name"&gt;Name:&lt;/label&gt;</code></p>
+    
+        
+    <h4>4) &lt;textarea&gt; - Defines a multi-line text input control.</h4>
+    <p>Example: <code>&lt;textarea rows="3" cols="20"&gt;...&lt;/textarea&gt;</code></p>
+    
+        
+    <h4>5) &lt;select&gt; and &lt;option&gt; - Creates a dropdown list.</h4>
+    <p>Example: <code>&lt;select&gt;&lt;option&gt;A&lt;/option&gt;&lt;option&gt;B&lt;/option&gt;&lt;/select&gt;</code></p>
+    
+        
+    <h4>6) &lt;button&gt; - Defines a clickable button.</h4>
+    <p>Example: <code>&lt;button type="submit"&gt;Send&lt;/button&gt;</code></p>
+    
+
+    <b><p>A simple form output:</p></b>
+
+    <form>
+        Name: <input type="text" name="name"><br><br>
+
+        Email: <input type="email"><br><br>
+
+        Password: <input type="password"><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        Fav Sports:
+        <input type="checkbox" value="Cricket"> Cricket
+        <input type="checkbox" value="Football"> Football
+        <input type="checkbox" value="Wrestling"> Wrestling
+        <input type="checkbox" value="Kabbadi"> Kabbadi
+        <br><br>
+
+        Date of Birth: <input type="date"><br><br>
+
+        Timing: <input type="time"><br><br>
+
+        Upload File: <input type="file"><br><br>
+
+        Select your day:
+        <select>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+        </select>
+        <br><br>
+
+        Button: <input type="button" value="This is a button"><br><br>
+
+        Enter multiple text here:
+        <textarea rows="1" cols="50"></textarea><br><br>
+
+        <input type="submit">
+    </form>
+
+    <hr>
+    <h3>Tables</h3>
+    <hr>
+
+    <h4>1) &lt;table&gt; structure (&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;caption&gt;)</h4>
+    <p>Example: <code>&lt;table border="1"&gt;&lt;caption&gt;Data&lt;/caption&gt;&lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></p>
+        
+    <h4>2) &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; - Table Structure Groups.</h4>
+    <p>Example: <code>&lt;table&gt; &lt;thead&gt;...&lt;/thead&gt; &lt;tbody&gt;...&lt;/tbody&gt; &lt;tfoot&gt;...&lt;/tfoot&gt; &lt;/table&gt;</code></p>
+
+    <p>Sample table:</p>
+    <table border="1">
+        <caption>Student Marks Data</caption>
+
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>101</td><td>Arun</td><td>Maths</td><td>95</td></tr>
+            <tr><td>102</td><td>Kiran</td><td>Science</td><td>88</td></tr>
+            <tr><td>103</td><td>Meena</td><td>English</td><td>92</td></tr>
+            <tr><td>104</td><td>Ravi</td><td>Social</td><td>85</td></tr>
+            <tr><td>105</td><td>Divya</td><td>Computer</td><td>98</td></tr>
+            <tr><td>106</td><td>Sanjay</td><td>Physics</td><td>90</td></tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">End of Student Data</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
