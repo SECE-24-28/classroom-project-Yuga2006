@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Slip Generator</title>
+</head>
+<body>
+
+    <h2>Salary Slip Generator</h2>
+
+    <form>
+        <label>Employee Name: </label>
+        <input type="text" id="name"><br><br>
+
+        <label>Department: </label>
+        <input type="text" id="dept"><br><br>
+
+        <label>Basic Salary: </label>
+        <input type="number" id="basic"><br><br>
+
+        <button type="button" onclick="generateSlip()">Generate Slip</button>
+    </form>
+
+    <hr>
+
+    <h3>Salary Slip</h3>
+    <p id="output"></p>
+
+    <script>
+        function generateSlip() {
+            let name = document.getElementById("name").value;
+            let dept = document.getElementById("dept").value;
+            let basic = Number(document.getElementById("basic").value);
+
+            let hra = basic * 0.10;    // 10%
+            let pf = basic * 0.05;     // 5%
+            let net = basic + hra - pf;
+
+            let msg = `
+                <b>Hello ${name}!</b><br><br>
+                <b>Department:</b> ${dept} <br>
+                <b>Basic Salary:</b> ₹${basic} <br>
+                <b>HRA (10%):</b> ₹${hra} <br>
+                <b>PF (5%):</b> ₹${pf} <br>
+                <b>Net Salary:</b> <span style="color:green;"><b>₹${net}</b></span>
+            `;
+
+            document.getElementById("output").innerHTML = msg;
+        }
+    </script>
+
+</body>
+</html>
