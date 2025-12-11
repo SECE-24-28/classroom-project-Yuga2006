@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Recharge</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Mobile Recharge</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recharge.html" class="active">Recharge</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+            <div class="user-menu" id="userMenu">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="signup.html" class="btn btn-secondary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <h2>Mobile Recharge</h2>
+            
+            <form id="rechargeForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="mobileNumber" placeholder="Enter 10-digit number" maxlength="10" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Select Circle/State</label>
+                        <select id="circle" required>
+                            <option value="">Select Circle</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="pune">Pune</option>
+                            <option value="gujarat">Gujarat</option>
+                            <option value="rajasthan">Rajasthan</option>
+                            <option value="up-east">UP East</option>
+                            <option value="up-west">UP West</option>
+                            <option value="bihar">Bihar</option>
+                            <option value="west-bengal">West Bengal</option>
+                            <option value="madhya-pradesh">Madhya Pradesh</option>
+                            <option value="tamil-nadu">Tamil Nadu</option>
+                            <option value="karnataka">Karnataka</option>
+                            <option value="andhra-pradesh">Andhra Pradesh</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="haryana">Haryana</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Select Operator</label>
+                    <div class="operators-grid">
+                        <div class="operator-card" data-operator="jio">
+                            <div class="operator-logo jio">Jio</div>
+                        </div>
+                        <div class="operator-card" data-operator="airtel">
+                            <div class="operator-logo airtel">Airtel</div>
+                        </div>
+                        <div class="operator-card" data-operator="vi">
+                            <div class="operator-logo vi">Vi</div>
+                        </div>
+                        <div class="operator-card" data-operator="bsnl">
+                            <div class="operator-logo bsnl">BSNL</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="selectedOperator" required>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="button" id="viewPlansBtn" class="btn btn-primary" disabled>View Plans</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts/plans.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

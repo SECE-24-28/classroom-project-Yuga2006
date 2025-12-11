@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="success-container">
+            <div class="success-icon">✅</div>
+            <h1>Payment Successful!</h1>
+            <p>Your recharge has been completed successfully</p>
+            
+            <div class="transaction-details">
+                <h3>Transaction Details</h3>
+                <div class="detail-item">
+                    <span>Transaction ID:</span>
+                    <span id="transactionId"></span>
+                </div>
+                <div class="detail-item">
+                    <span>Mobile Number:</span>
+                    <span id="successMobile"></span>
+                </div>
+                <div class="detail-item">
+                    <span>Operator:</span>
+                    <span id="successOperator"></span>
+                </div>
+                <div class="detail-item">
+                    <span>Amount:</span>
+                    <span id="successAmount"></span>
+                </div>
+                <div class="detail-item">
+                    <span>Date & Time:</span>
+                    <span id="successDate"></span>
+                </div>
+            </div>
+            
+            <div class="success-actions">
+                <a href="dashboard.html" class="btn btn-primary">Go to Dashboard</a>
+                <a href="recharge.html" class="btn btn-secondary">Recharge Again</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>

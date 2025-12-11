@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Mobile Recharge</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-brand">Mobile Recharge</a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="recharge.html" class="active">Recharge</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="user-menu">
+                <span id="userName">Welcome!</span>
+                <div class="user-avatar">U</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px;">Complete Payment</h2>
+        
+        <div class="payment-container">
+            <div class="payment-left">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Mobile Number:</span>
+                        <span id="paymentMobile"></span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Operator:</span>
+                        <span id="paymentOperator"></span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Plan:</span>
+                        <span id="paymentPlan"></span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total Amount:</span>
+                        <span id="paymentAmount"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-right">
+                <div class="payment-methods">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-options">
+                        <div class="payment-option selected" data-method="upi">
+                            <span>💳</span>
+                            <span>UPI Payment</span>
+                        </div>
+                        <div class="payment-option" data-method="card">
+                            <span>💳</span>
+                            <span>Credit/Debit Card</span>
+                        </div>
+                        <div class="payment-option" data-method="wallet">
+                            <span>👛</span>
+                            <span>Digital Wallet</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="payNowBtn" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Pay Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <h3>Processing Payment...</h3>
+            <div class="payment-loader"></div>
+            <p>Please wait while we process your payment</p>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>

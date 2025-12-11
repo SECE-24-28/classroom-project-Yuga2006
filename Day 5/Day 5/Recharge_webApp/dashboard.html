@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mobile Recharge</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-brand">Mobile Recharge</a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="recharge.html">Recharge</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="user-menu">
+                <span id="userName">Welcome!</span>
+                <div class="user-avatar">U</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="dashboard-grid">
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <a href="recharge.html" class="action-card">
+                    <div class="action-icon">📱</div>
+                    <span>Mobile Recharge</span>
+                </a>
+            </div>
+            
+            <div class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <div id="recentTransactions">
+                    <p class="no-transactions">No recent transactions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>

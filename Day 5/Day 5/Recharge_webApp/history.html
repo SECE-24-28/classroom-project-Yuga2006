@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Mobile Recharge</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recharge.html">Recharge</a></li>
+                <li><a href="history.html" class="active">History</a></li>
+            </ul>
+            <div class="user-menu" id="userMenu">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="signup.html" class="btn btn-secondary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2>Transaction History</h2>
+                <div class="filter-options">
+                    <select id="filterPeriod">
+                        <option value="all">All Transactions</option>
+                        <option value="today">Today</option>
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="transactionsList" class="transactions-list">
+                <!-- Transactions will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>

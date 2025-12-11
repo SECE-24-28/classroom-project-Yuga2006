@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-brand">Mobile Recharge</a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="recharge.html">Recharge</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+            <div class="user-menu">
+                <span id="userName">Welcome!</span>
+                <div class="user-avatar">U</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <h2 style="text-align: center; margin-bottom: 30px;">User Profile</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="profile-avatar" style="margin-bottom: 40px;">
+                    <div class="avatar-circle">👤</div>
+                </div>
+                
+                <form id="profileForm" class="profile-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="profileName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="profileEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="profileMobile" required>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary" style="margin-right: 15px;">Update Profile</button>
+                        <button type="button" id="logoutBtn" class="btn btn-danger">Logout</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>
